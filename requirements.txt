@@ -1,7 +1,14 @@
+# Librerías necesarias para el notebook 01 (carga, limpieza y ordenación).
+# Instalar con:  pip install -r requirements.txt
 pandas>=2.0
 numpy>=1.24
-jupyter>=1.0
-ipykernel>=6.0
 matplotlib>=3.7
-seaborn>=0.13
-scikit-learn>=1.3
+ipykernel>=6.0
+
+# NO agregar el paquete "jupyter" acá: VS Code sólo necesita ipykernel, y "jupyter"
+# arrastra argon2-cffi-bindings, que falla al compilar en las versiones más nuevas
+# de Python (Python 3.14 y posteriores).
+
+# Para la etapa 2 (análisis y correlaciones) van a hacer falta también:
+# seaborn>=0.13
+# scikit-learn>=1.3
